@@ -3,14 +3,14 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package sistemaclinica;
-
+import Controlador.MenuControlador;
+import Visual.Menu;
 public class SistemaClinica {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+    Menu menu = new Menu();
+    MenuControlador menuController = new MenuControlador(menu);
+    menu.setVisible(true);
     }
     
 }
